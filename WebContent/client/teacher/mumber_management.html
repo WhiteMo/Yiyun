@@ -1,0 +1,202 @@
+﻿
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>课程成员</title>
+
+    <!-- css -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/header_and_footer.css" rel="stylesheet" />
+    <link href="../css/mumber_management.css" rel="stylesheet" />
+    <!--javascript-->
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script src="../js/require.js"></script>
+    <script src="../js/bootstrap.js"></script>
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+<body style="padding-top:50px; margin:8px 0 0 0;">
+    <iframe src="../header_and_footer/header.html" id="iframe-header"></iframe>
+
+    <div class="container">
+        <div id="mm_head">
+
+            <button id="mum_in" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                导入成员
+            </button>
+            <a>下载成员信息</a>
+            <div class="mum_searcher">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="mm_input" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" id="mm_button" type="button">查找</button>
+                    </span>
+                </div><!-- /input-group -->
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" id="outer">
+
+
+
+        <div id="main">
+            <div class="row">
+                <div class="col-xs-3" style="border-right:solid 1px #eee;padding:0;min-height:600px">
+                    <div style="padding:10px 10px 10px 25px">
+                        <div class="mm-name">
+                            课程名称
+                        </div>
+                    </div>
+                    <div style="border-top:solid 1px #eee;">
+                        <ul class="mm-info">
+                            <li>
+                                教学团队(1)
+                            </li>
+                            <li>
+                                全部学生(3)
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-9" style="padding:0;">
+                    <div class="mm-leibie">
+                        教学团队（1）
+                    </div>
+                    <ul class="mm-mumber">
+                        <li>
+                            <div class="row">
+                                <div class="col-xs-2">
+                                    <span>香蕉君</span>
+                                </div>
+                                <div class="col-xs-2">
+                                    <span>管理员</span>
+                                </div>
+                                <div class="col-xs-3">
+                                    <span>中国人民大学</span>
+                                </div>
+                                <div class="col-xs-3">
+                                    <span>123@123.com</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="mm-leibie">
+                        全部学生（3）
+                    </div>
+                    <ul class="mm-mumber">
+                        <li>
+                            <div class="row">
+                                <div></div>
+                                <div class="col-xs-3">
+                                    <span>8012123123</span>
+                                </div>
+                                <div class="col-xs-2">
+                                    <span>夕立</span>
+                                </div>
+
+                                <div class="col-xs-3">
+                                    <span>中国人民大学</span>
+                                </div>
+                                <div class="col-xs-3">
+                                    <span>20182333333</span>
+                                </div>
+                            </div>
+                        </li>
+
+
+                        <li>
+                            <div class="row">
+                                <div></div>
+                                <div class="col-xs-3">
+                                    <span>8012123123</span>
+                                </div>
+                                <div class="col-xs-2">
+                                    <span>时雨</span>
+                                </div>
+
+                                <div class="col-xs-3">
+                                    <span>横须贺镇守府</span>
+                                </div>
+                                <div class="col-xs-3">
+                                    <span>20182333333</span>
+                                </div>
+                            </div>
+                        </li>
+
+
+                        <li>
+                            <div class="row">
+                                <div></div>
+                                <div class="col-xs-3">
+                                    <span>8012123123</span>
+                                </div>
+                                <div class="col-xs-2">
+                                    <span>俾斯麦</span>
+                                </div>
+
+                                <div class="col-xs-3">
+                                    <span>岩川镇守府</span>
+                                </div>
+                                <div class="col-xs-3">
+                                    <span>20182333333</span>
+                                </div>
+                            </div>
+                        </li>
+
+
+
+
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <!--模态框-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">上传成员名单</h4>
+                </div>
+                <div class="modal-body">
+                    
+                    <label for="exampleInputFile">请上传成员名单（Excel表格）</label>
+                    <input type="file" id="exampleInputFile">
+                    <p class="help-block">仅有一列，为网站id</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div><!--模态框-->
+
+
+
+    <iframe src="../header_and_footer/footer.html" id="iframe-footer"></iframe>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://v3.bootcss.com/examples/signin/ -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://v3.bootcss.com/favicon.ico">
+
+    <title>Signin Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css//bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css//signin.css" rel="stylesheet">
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script src="../js/require.js"></script>
+    <script src="../js/bootstrap.js"></script>
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../js/ie-emulation-modes-warning.js"></script>
+    <link href="../css/header_and_footer.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<style>
+	.kuang{
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	display: block;
+	transform:translate(-50%,-50%);
+	width:500px;
+	height:290px;
+	background-color:#f8d6d5;
+	}
+	.biaoti{
+	text-align:center;
+	width:500px;
+	height:40px;
+	font-size:40px;
+	color:white;
+	display: block;
+	position:absolute;
+	margin-top:-60px;
+	}
+	.sign{
+	text-align:center;
+	width:500px;
+	height:30px;
+	font-size:18px;
+	color:white;
+	display: block;
+	position:absolute;
+	margin-top:40px;
+	}
+	.sign a{
+	color:white;
+	}
+	.sign > a :hover,.sign > a :focus{
+	color:#f8d6d5;
+	}
+	</style>
+  </head>
+
+  <body style="background-color:#ab2526">
+    <iframe src="../header_and_footer/header.html" id="iframe-header"></iframe>
+
+    <div class="kuang">
+    <div class="biaoti">亦&emsp;云</div>
+      <form class="form-signin">
+        <h2 class="form-signin-heading">Please log in</h2>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input style="background-color:#f8d6d5" type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+        <label  for="inputPassword" class="sr-only">Password</label>
+        <input style="background-color:#f8d6d5" type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <button style="background-color:#ab2526;border-color:#ab2526"class="btn btn-lg btn-primary btn-block" type="submit">log in</button>
+      </form>
+	  <div class="sign">Don't have an account?<a href="sign_up.html">sign up</a></div>
+
+    </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+</body></html>

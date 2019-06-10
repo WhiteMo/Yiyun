@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>searcher</title>
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/header_and_footer.css" rel="stylesheet" />
+    <link href="../css/searcher_show_style1.css" rel="stylesheet" />
+    <link href="../css/searcher_show_style_common.css" rel="stylesheet" />
+    <link href="../css/searcher.css" rel="stylesheet" />
+
+
+    <!--javascript-->
+
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script src="../js/header-and-footer.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/searcher.js"></script>
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- <link href="css/header_and_footer.css" rel="stylesheet" /> -->
+</head>
+
+<body style="padding-top:50px; margin:8px 0 0 0;">
+    <iframe src="../header_and_footer/header.html" id="iframe-header"></iframe>
+
+
+    <div class="container <!--hidden-xs--> searcher-searcher">
+        <!-- 搜索栏 -->
+        <div class="row" style="height:100%">
+            <div class="col-md-1 hidden-sm"><br /></div>
+            <div class="col-xs-3" style="height:100%">
+                <img src="../image/header_brand_image.png" />
+                <span id="searcher-searcher-brand">Brand</span>
+            </div>
+            <div class="col-xs-7">
+                <div class="input-group searcher-searcher-form">
+                    <!---->
+                    <input type="text" class="form-control" placeholder="搜索">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                    </span>
+                </div>
+                <!-- /input-group -->
+            </div>
+        </div>
+    </div>
+    <!-- 搜索栏 -->
+
+    <div class="container searcher-selecter">
+        <!-- 选项 -->
+        <div class="searcher-selecter-content">
+            <!-- 课程 -->
+
+            <h4>课程:</h4>
+
+            <a href="#" class="list-group-item">
+                 计算机
+            </a>
+            <a href="#" class="list-group-item">
+                数学
+            </a>
+            <a href="#" class="searcher-selecter-active list-group-item ">
+                哲♂学
+            </a>
+        </div>
+        <!-- 课程 -->
+
+        <hr />
+        <!--分割线-->
+
+        <div class="searcher-selecter-content">
+            <!-- 学校 -->
+            <h4>学校:</h4>
+            <a href="#" class="list-group-item">
+                人大
+            </a>
+            <a href="#" class="list-group-item">
+                中国人民大学
+            </a>
+            <a href="#" class="searcher-selecter-active list-group-item ">
+                中国人民大学信息学院
+            </a>
+        </div>
+        <!-- 学校 -->
+
+    </div>
+    <!-- 选项 -->
+
+    <div class="container searcher-show">
+        <!-- 课程展示 -->
+        <div class="searcher-show-course">
+            <!-- 课程1 -->
+            <div class=" view view-first searcher-myview">
+                <img src="../image/course-info-test.jpg">
+                <div class="mask">
+                    <h2>课程名称</h2>
+                    <p>香蕉君教大家如何跳舞</p>
+                    <a href="../course/course-info.html" class="info">Read More</a>
+                </div>
+            </div>
+
+            <div class="searcher-show-info">
+                <h3>课程名称</h3>
+                <p style="margin: 0 0 30px;">
+                    如何从生活中提炼算法，使计算机能象人一样解决问题？如何运用计算思维，用计算机来提高人的能力？我们将为你呈现一个既熟悉又陌生的精彩世界，带你感悟不一样的计算人生。
+                </p>
+                <div>
+                    <span style="float:left;color:#777">讲师：香蕉君</span>
+                    <span style="float:right;color:#777">
+                            <span>
+                                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>32人
+                    </span>
+                    &ensp;
+                    <span onclick="red_it(this)" style="cursor:pointer">
+                                    <span class="glyphicon glyphicon-heart-empty"  aria-hidden="true"></span>16
+                    </span>
+
+                    </span>
+                </div>
+                <br/>
+                <div style="padding-top:0.5em">
+                    <span style="float:right;">
+                        <a style="color:#777;" href="../course/course-info.html">更多信息</a>
+                    </span>
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <!-- 课程1 -->
+
+
+
+
+    </div>
+    <!-- 课程展示 -->
+
+
+
+
+    <iframe src="../header_and_footer/footer.html" id="iframe-footer"></iframe>
+</body>
+
+</html>

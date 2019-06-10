@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>course-info</title>
+
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/header_and_footer.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/comment.css">
+    <style>
+        #course-info-title {
+            background-color: #f6f6f6;
+        }
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body style="padding-top:60px; margin-top:60px; margin:8px 0 0 0;">
+    <iframe src="../header_and_footer/header.html" id="iframe-header"></iframe>
+    <div class="container">
+
+        <div id="course-info-title" class="row clearfix" style="position:relative">
+            <!--大标题-->
+            <div class="list-title">
+                <br>
+                <h2 style="padding-left:30px">课程名称</h2>
+                <br>
+            </div>
+            <!--课程信息（简）-->
+            <div class="row">
+                <div class="col-md-6 col-lg-6 pull-left">
+                    <img src="../image/course-info-test.jpg" class="media-object" style="padding-left:30px" width="534" height="308" alt='' />
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <h4 class="title">课程描述</h4>
+                    <p class="text">如何从生活中提炼算法，使计算机能象人一样解决问题？如何运用计算思维，用计算机来提高人的能力？我们将为你呈现一个既熟悉又陌生的精彩世界，带你感悟不一样的计算人生。 </p>
+                    <hr class="line">
+                    <p class="text-muted">课程分类：<span id="course-type"></span></p>
+                    <p class="text-muted">课程时长：<span id="course-lasting"></span></p>
+                    <p class="text-muted">开课时间：<span id="course-startingtime"></span></p>
+                    <p class="text-muted">教学进度：<span id="course-plan"></span></p>
+                    <hr class="line">
+                    <p>
+                        <a onclick="window.open('course-live.html')" class="btn btn-default btn-large col-md-5" style="background-color:rgba(255, 147, 38,0.8);color:white;" href="#">
+							 观看直播
+							</a>
+                        <span class="col-md-1"></span>
+                        <a onclick="window.open('course-live.html')" class="btn btn-default btn-large col-md-5" style="background-color:rgba(255, 147, 38,0.8);color:white;" href="#">
+							 观看回放
+							</a>
+                    </p>
+                </div>
+            </div>
+            <br>
+        </div>
+        <br>
+        <!--选项卡-->
+        <div class="row clearfix">
+            <ul class="nav nav-tabs" id="myTab">
+                <li class="col-md-2 col-lg-2 active">
+                    <a class="text-center" href="#course-introduction" data-toggle="tab">课程介绍</a>
+                </li>
+                <li class="col-md-2 col-lg-2">
+                    <a class="text-center" href="#course-teacher" data-toggle="tab">授课教师</a>
+                </li>
+                <li class="col-md-2 col-lg-2">
+                    <a class="text-center" href="#course-source" data-toggle="tab">课程资源</a>
+                </li>
+                <li class="col-md-2 col-lg-2">
+                    <a class="text-center" href="#course-homework" data-toggle="tab">课程作业</a>
+                </li>
+                <li class="col-md-4 col-lg-4">
+                    <a class="text-center" href="#course-question" data-toggle="tab">课程问题与讨论</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade in active" id="course-introduction">
+                <br>
+                <section>
+                    <h4 class="second-title">课程简介</h4>
+                    <dl class="course-description">
+                        <dt>
+							Description lists
+						</dt>
+                        <dd>
+                            A description list is perfect for defining terms.
+                        </dd>
+                        <dt>
+							Euismod
+						</dt>
+                        <dd>
+                            Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+                        </dd>
+                        <dd>
+                            Donec id elit non mi porta gravida at eget metus.
+                        </dd>
+                        <dt>
+							Malesuada porta
+						</dt>
+                        <dd>
+                            Etiam porta sem malesuada magna mollis euismod.
+                        </dd>
+                        <dt>
+							Felis euismod semper eget lacinia
+						</dt>
+                        <dd>
+                            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                        </dd>
+                    </dl>
+                </section>
+                <hr class="line">
+                <section>
+                    <h4 class="second-title">课程章节目录</h4>
+                    <dl class="course-contents">
+                        <dt>
+							Description lists
+						</dt>
+                        <dd>
+                            A description list is perfect for defining terms.
+                        </dd>
+                        <dt>
+							Euismod
+						</dt>
+                        <dd>
+                            Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+                        </dd>
+                        <dd>
+                            Donec id elit non mi porta gravida at eget metus.
+                        </dd>
+                        <dt>
+							Malesuada porta
+						</dt>
+                        <dd>
+                            Etiam porta sem malesuada magna mollis euismod.
+                        </dd>
+                        <dt>
+							Felis euismod semper eget lacinia
+						</dt>
+                        <dd>
+                            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                        </dd>
+                    </dl>
+                </section>
+                <hr class="line">
+                <section>
+                    <h4 class="second-title">教学大纲</h4>
+                    <dl class="course-outline">
+                        <dt>
+							Description lists
+						</dt>
+                        <dd>
+                            A description list is perfect for defining terms.
+                        </dd>
+                        <dt>
+							Euismod
+						</dt>
+                        <dd>
+                            Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+                        </dd>
+                        <dd>
+                            Donec id elit non mi porta gravida at eget metus.
+                        </dd>
+                        <dt>
+							Malesuada porta
+						</dt>
+                        <dd>
+                            Etiam porta sem malesuada magna mollis euismod.
+                        </dd>
+                        <dt>
+							Felis euismod semper eget lacinia
+						</dt>
+                        <dd>
+                            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                        </dd>
+                    </dl>
+                </section>
+            </div>
+
+            <div class="tab-pane fade" id="course-teacher">
+                <section>
+                    <br>
+                    <div class="col-md-12 column">
+                        <div class="media">
+                            <a href="#" class="pull-left"><img src="../image/course-teacher.png" class="media-object" width="128" height="128" alt='' /></a>
+                            <div class="media-body">
+                                <h4 class="second-title media-heading">授课教师</h4>
+                                <p class="course-teacher-desc">一些介绍</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="tab-pane fade" id="course-source">
+                <br>
+                <p style="font-size:20px;">暂无课程资源...</p>
+            </div>
+
+            <div class="tab-pane fade col-md-12" id="course-homework">
+                <br>
+                <div class="panel-group" id="panel-337455">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-337455" href="#panel-element-697264">作业1</a>
+                        </div>
+                        <div id="panel-element-697264" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                一些作业...
+                                <div class="form-group">
+                                    <label for="exampleInputFile">提交作业</label><input id="exampleInputFile" type="file" />
+                                    <p class="help-block">
+                                        Example block-level help text here.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-337455" href="#panel-element-827581">作业2</a>
+                        </div>
+                        <div id="panel-element-827581" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                另一些作业...
+                                <div class="form-group">
+                                    <label for="exampleInputFile">提交作业</label><input id="exampleInputFile" type="file" />
+                                    <p class="help-block">
+                                        Example block-level help text here.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="course-question">
+                <div class="commentAll">
+                    <!--评论区域 begin-->
+                    <div class="reviewArea clearfix">
+                        <textarea class="content comment-input" placeholder="Please enter a comment&hellip;" onkeyup="keyUP(this)"></textarea>
+                        <a href="javascript:;" class="plBtn">评论</a>
+                    </div>
+                    <!--评论区域 end-->
+                    <!--回复区域 begin-->
+                    <div class="comment-show">
+                        <div class="comment-show-con clearfix">
+                            <div class="comment-show-con-list pull-left clearfix">
+                                <div class="pl-text clearfix">
+                                    <a href="#" class="comment-size-name">Cloud : </a>
+                                    <span class="my-pl-con">&nbsp;666</span>
+                                </div>
+                                <div class="date-dz">
+                                    <span class="date-dz-left pull-left comment-time">2017-5-2 11:11:39</span>
+                                    <div class="date-dz-right pull-right comment-pl-block">
+                                        <a href="javascript:;" class="removeBlock">删除</a>
+                                        <span class="pull-left date-dz-line">|</span>
+                                        <a href="javascript:;" class="date-dz-z pull-left"><i class="date-dz-z-click-red"></i>赞 (<i class="z-num">666</i>)</a>
+                                    </div>
+                                </div>
+                                <div class="hf-list-con"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--回复区域 end-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <iframe src="../header_and_footer/footer.html" id="iframe-footer"></iframe>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script src="../js/require.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.js"></script>
+
+    <script src="../js/header-and-footer.js"></script>
+    <script src="../js/jquery.flexText.js"></script>
+    <script src="../js/comment.js"></script>
+
+</body>
+
+</html>

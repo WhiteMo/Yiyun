@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>course-live</title>
+	
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/comment.css">
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link href="../css/header_and_footer.css" rel="stylesheet" />
+	
+</head>
+
+<body style="padding-top:60px;margin-top:60px; margin:8px 0 0 0;">
+<iframe src="../header_and_footer/header.html" id="iframe-header"></iframe> 
+	<div class="container">
+		<!--标题-->
+		<div class="row clearfix">
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<div class="page-header">
+					<h1>
+						课程名称 <small id="onlive">（正在直播）</small>
+					</h1>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row clearfix">
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<div id="willesPlay">
+					<!--播放器头部-->
+					<!--播放器内容-->
+					<div class="playContent" width="100%" height="600px">
+							<div id="player">
+							<script type="text/javascript" src="jwplayer.js"> </script>
+							<script type="text/javascript">
+							function a()
+							{
+							jwplayer("player").setup({
+							flashplayer:"player.swf",
+							image:"lrx.jpg",
+							file:"lrx",
+							height:"570px",
+							width:"100%",
+							streamer:"rtmp://183.174.60.25:1935/live"
+							});
+							}
+							a()
+							</script>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row clearfix">
+			<div class="col-sm-8 col-md-8 col-lg-8">
+			<br>
+				<div class="row">
+								<div class="col-sm-12 col-md-12 col-lg-12">
+									<div class="page-header">
+										<h3>课程回放</h3>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-6 col-md-6 col-lg-6">
+									<div class="thumbnail">
+										<img alt="300x200" src="../image/course-info-test.jpg" />
+										<div class="caption">
+											<h4>程序设计基础</h4>
+											<p>章节1-1 基础知识（1）</p>
+											<p>
+												 <a class="btn btn-default" href="#">观看</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-6 col-lg-6">
+									<div class="thumbnail">
+										<img alt="300x200" src="../image/course-info-test.jpg" />
+										<div class="caption">
+											<h4>程序设计基础</h4>
+											<p>章节1-2 基础知识（2）</p>
+											<p>
+												 <a class="btn btn-default" href="#">观看</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-6 col-md-6 col-lg-6">
+									<div class="thumbnail">
+										<img alt="300x200" src="../image/course-info-test.jpg" />
+										<div class="caption">
+											<h4>
+												程序设计基础
+											</h4>
+											<p>章节1-3 基础知识（3）</p>
+											<p>
+												 <a class="btn btn-default" href="#">观看</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-6 col-lg-6">
+									<div class="thumbnail">
+										<img alt="300x200" src="../image/course-info-test.jpg" />
+										<div class="caption">
+											<h4>
+												程序设计基础
+											</h4>
+											<p>章节1-4 基础知识（4）</p>
+											<p>
+												 <a class="btn btn-default" href="#">观看</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+			</div>
+			<div class="col-sm-4 col-md-4 col-lg-4">
+				<div class="commentAll">
+					<!--评论区域 begin-->
+					<div class="page-header">
+						<h3>发表评论</h3>
+					</div>
+					<div class="reviewArea clearfix">
+						<textarea class="content comment-input" placeholder="Please enter a comment&hellip;" onkeyup="keyUP(this)"></textarea>
+						<a href="javascript:;" class="plBtn">评论</a>
+					</div>
+					<!--评论区域 end-->
+					<!--回复区域 begin-->
+					<div class="comment-show">
+						<div class="comment-show-con clearfix">
+							<div class="comment-show-con-list pull-left clearfix">
+								<div class="pl-text clearfix">
+									<a href="#" class="comment-size-name">Cloud : </a>
+									<span class="my-pl-con">&nbsp;666</span>
+								</div>
+								<div class="date-dz">
+									<span class="date-dz-left pull-left comment-time">2017-5-2 11:11:39</span>
+									<div class="date-dz-right pull-right comment-pl-block">
+										<a href="javascript:;" class="removeBlock">删除</a>
+										<span class="pull-left date-dz-line">|</span>
+										<a href="javascript:;" class="date-dz-z pull-left"><i class="date-dz-z-click-red"></i>赞 (<i class="z-num">666</i>)</a>
+									</div>
+								</div>
+								<div class="hf-list-con"></div>
+							</div>
+						</div>
+					</div>
+					<!--回复区域 end-->
+				</div>
+			</div>
+		</div>
+	</div>
+<iframe src="../header_and_footer/footer.html" id="iframe-footer"></iframe> 
+	<script src="../js/jquery-3.3.1.js"></script>
+	<script src="../js/jquery.flexText.js"></script>
+    <script src="../js/require.js"></script> 
+	<script src="../js/bootstrap.js"></script>
+	<script src="../js/comment.js"></script>
+	<script src="../js/header-and-footer.js"></script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+﻿.nobutton{
+margin-top: 15px;
+padding: 0;
+display:inline;
+border:0;
+background-color:#d00000;
+color:white;
+}
+
+.header-sign-button:hover,
+.header-sign-button:focus {
+    background-color: transparent;
+    border:none;
+    outline:none;
+	color:black;
+}
+
+
+
+
+.header-sign-button:hover:link,
+.header-sign-button:hover:visited,
+.header-sign-button:hover:hover,
+.header-sign-button:hover:active {
+    background-color: transparent;
+    border:none;
+
+}
+ #iframe-header {
+    border:none;
+    width:100%;
+    height:50px;
+    overflow:visible;
+    background-color:#d00000;
+    border-width: 0 0 1px;
+}
+#header-body{
+    background-color:#d00000;
+	z-index:3;
+	width:100%;
+}
+#iframe-footer {
+    border:none;
+    width:100%;
+    height:300px;
+    overflow:visible;
+    background-color:rgba(0,0,0,0);
+}
+#brand_img{
+    height :100%;
+    display:inline;
+    float:left;
+}
+#header_brand{
+    padding:10px 15px;
+}
+#header_brand span{
+    padding:5px !important;
+}
+.lvrongqi{
+width:100%;
+background:#d00000;
+}
+.header-nav{
+  background-color:#d00000;
+  border-color:#d00000;
+  position:absolute;
+  border:0px;
+  margin:0;
+  padding:0px;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #fff;
+  background-color:#d00000;
+  border-color:#d00000;
+}
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+  color: #080808;
+  background-color: transparent;
+}
+
+.header-nav .navbar-text {
+  color: #fff;
+}
+.header-nav .navbar-nav > li > a {
+  color: #fff;
+}
+.header-nav .navbar-nav > li > a:hover,
+.header-nav .navbar-nav > li > a:focus {
+  color: #080808;
+  background-color: transparent;
+}
+.header-nav .navbar-nav > .active > a,
+.header-nav .navbar-nav > .active > a:hover,
+.header-nav .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #080808;
+}
+.header-nav .navbar-nav > .disabled > a,
+.header-nav .navbar-nav > .disabled > a:hover,
+.header-nav .navbar-nav > .disabled > a:focus {
+  color: #444;
+  background-color: transparent;
+}
+.header-nav .navbar-toggle {
+  border-color: #333;
+}
+.header-nav .navbar-toggle:hover,
+.header-nav .navbar-toggle:focus {
+  background-color: #333;
+}
+.header-nav .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.header-nav .navbar-collapse,
+.header-nav .navbar-form {
+  border-color: #101010;
+}
+.header-nav .navbar-nav > .open > a,
+.header-nav .navbar-nav > .open > a:hover,
+.header-nav .navbar-nav > .open > a:focus {
+  color: #fff;
+  background-color: #080808;
+}
+
+#header-searcher-button{
+background-color:#fff;
+color:#d00000;
+border:none;
+height:34px;
+border-radius:0;
+margin-left:-4px;
+}
+#header-searcher-button:hover{
+	color:#fff;
+	background-color:#d00000;
+}
+#header-searcher-input
+{
+	border-radius:0;
+}
+.dropdown-menu-several-column
+{
+    -moz-column-count:2; /* Firefox */
+	-webkit-column-count:2; /* Safari and Chrome */
+	column-count:2;
+    -moz-column-gap:0px; /* Firefox */
+	-webkit-column-gap:0px; /* Safari and Chrome */
+	column-gap:0px;
+}
+#footer-body{
+    height:300px;
+    width:100%;
+    background-color:#333;
+}
+.footer-brand{
+    height:120px;
+    padding-top:35px;
+
+
+}
+.footer-brand img{
+    height:60%;
+    margin-top:-25px;
+}
+.footer-text{
+    margin-top:0;
+
+}
+
+
+
+.footer-brand h2{
+    color:#fff;
+    font-size:35px;
+    margin-left:30px;
+    display:inline;
+    
+}
+.footer-sevral-column{
+     -moz-column-count:2; /* Firefox */
+	-webkit-column-count:2; /* Safari and Chrome */
+	column-count:2;
+    -moz-column-gap:0px; /* Firefox */
+	-webkit-column-gap:0px; /* Safari and Chrome */
+	column-gap:0px;
+    color:#fff;
+}
+.footer-sort a{
+    display:block;
+    font-weight:500;
+    padding:2px 0 2px 35px;
+    color:#eee;
+
+}
+
+.footer-sort a:hover{
+    font-size:1.1em;
+    padding:2px 0 2px 35px;
+    color:#d00000;
+    background-color:#363636;
+    text-decoration:none;
+    cursor:pointer;
+
+}
+.footer-icon{
+    height:50px;
+    width:50px;
+    margin-left:100px;
+    margin-top:20px;
+}
+.footer-icon img
+{
+    height:100%;
+}

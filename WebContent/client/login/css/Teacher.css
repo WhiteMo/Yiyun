@@ -1,0 +1,91 @@
+body{
+background-color:#eeeeee !important;
+}
+.kapian{
+width:230px;
+height:210px;
+display:inline-block;
+margin:30px 20px;
+}
+.kapian:hover,.kapian:focus{
+width:230px;
+height:210px;
+box-shadow:2px 2px 3px #aaaaaa;
+}
+.genggai{
+width:230px;
+height:20px;
+margin-left:18px;
+margin-top:-30px;
+}
+.genggai  a{
+color:#ab3234;
+font-size:13px;
+margin:0 9px;
+}
+.genggai a:hover,.genggai a:focus{
+color:#ab3234;
+}
+.pic{
+width:230px;
+height:125px;
+margin:0;
+padding:0;
+position:relative;
+overflow:hidden;
+float:left;
+}
+.pic img{
+position: absolute;
+display: block;
+min-width: 100%;
+min-height: 100%;
+max-height:115%;
+max-width:115%;
+top: 50%;
+left: 50%;
+transform:translate(-50%,-50%);
+}
+.pic > img:hover,.pic > img:focus{
+position: absolute;
+display: block;
+min-width: 110%;
+min-height: 110%;
+max-height:125%;
+max-width:125%;
+top: 50%;
+left: 50%;
+transform:translate(-50%,-50%);
+}
+.txt{
+width:230px;
+height:85px;
+text-align:left;
+background-color:white;
+margin:0;
+padding:0;
+float:left;
+}
+.txt h3{
+margin:15px 10px 5px 10px;
+font-family:yahei;
+font-size:16px;
+color:black;
+}
+.txt h4{
+margin:0 10px 0 10px;
+font-size:12px;
+color:rgba(0,180,60,.5);
+}
+.pingfen{
+margin:10px 0px 5px 10px;
+font-size:14px;
+color:rgb(153, 153, 153);
+float:left;
+}
+.userdata{
+margin:10px 10px 5px 0px;
+font-size:14px;
+color:rgb(153, 153, 153);
+float:right;
+}

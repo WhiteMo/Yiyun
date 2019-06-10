@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>  
+<html>  
+	<head>  
+		<meta charset="utf-8" />  
+		<title>注册界面</title>
+		<link href="../css/bootstrap.css" rel="stylesheet">
+		<script src="../js/jquery.js"></script>
+		<script src="../js/bootstrap.js"></script>
+		<style type="text/css">  
+			body {
+	background: url('<%=request.getContextPath()%>/client/login/img/4.jpg')
+		no-repeat;
+	background-size: cover;
+	font-size: 16px;
+	background-color: #ab2526;
+}
+
+			.form{background: rgba(255,255,255,0.2);width:100%;margin:50px auto;}  
+			#register_form{display: block;}  
+			input[type="text"],input[type="password"]{padding-left:26px;}  
+			.checkbox{padding-top:10px;}
+		</style>
+	</head>  
+	<body>
+	<div class="container">
+		<div class="form row">  
+			<form class="col-sm-3 col-md-3 col-lg-3" id="blank"></form>
+			<form class="form-horizontal col-sm-6 col-md-6 col-lg-6" id="register_form">  
+				<h3 class="form-title">注册账号</h3>  
+				<div class="col-sm-12 col-md-12 col-md-12">  
+					<div class="form-group">
+						<p></p>
+						<h5 class="form_hint">请选择您的注册身份：</h5>
+						<div class="btn-group col-sm-12 col-md-12 col-lg-12" id="identity">
+							<select class="form-control">
+								<option>请选择</option>
+								<option>教师</option>
+								<option>助教</option>
+								<option>学生</option>
+								<option>爱好者</option>
+							</select>
+						</div>
+					</div> 
+					<div class="form-group">
+						<h5 class="form_hint">请选择您所在的学校：</h5>
+						<div class="btn-group col-sm-12 col-md-12 col-lg-12" id="identity">
+						<!-- 后台获取数据 -->
+							<select class="form-control">
+								<option>请选择</option>
+								<option>中国人民大学</option>
+								<option>北京大学</option>
+								<option>清华大学</option>
+								<option>中国政法大学</option>
+								<option>北京理工大学</option>
+								<option>...</option>
+							</select>
+						</div>
+					</div>  
+					<div class="form-group"> 
+						<h5 class="form_hint">请输入您的用户名：</h5>
+						<input class="form-control required" type="text" placeholder="可使用汉字、英文字符、下划线，最多16个字符" name="username" autofocus="autofocus"/>  
+					</div>
+					<div class="form-group"> 
+						<h5 class="form_hint">请输入您的邮箱或手机号：</h5>
+						<input class="form-control required" type="text" placeholder="电子邮箱或手机号" name="username" autofocus="autofocus"/>  
+					</div>  
+					<div class="form-group">
+						<h5 class="form_hint">请输入您的密码：</h5>
+						<input class="form-control required" type="password" placeholder="建议包含数字、字母、符号，请勿使用过于简单的密码" id="register_password" name="password"/>  
+					</div>  
+					<div class="form-group"> 
+						<h5 class="form_hint">请确认您的密码：</h5>
+						<input class="form-control required" type="password" placeholder="需和刚才输入的密码一致" name="rpassword"/>  
+					</div>
+					<div class="form-group row">
+						<h5 class="form_hint">请输入验证码：</h5>
+						<div class=" col-sm-8 col-md-8 col-md-8">
+							<input class="form-control eamil" type="text" name="email"/>  
+						</div>
+						<div class=" col-sm-4 col-md-4 col-lg-4">
+							<button type="button" class="btn btn-default">点击获取验证码</button>
+						</div>
+					</div>  
+					<div class="checkbox">
+						<label>
+							<input type="checkbox"> 同意协议
+						</label>
+					</div>
+					
+					<div class="form-group"> 
+						<input type="submit" class="btn btn-md pull-right" value="注册"/>
+					</div>  
+				</div>  
+			</form>  
+		</div>  
+	</div> 
+	</body>  
+</html>  

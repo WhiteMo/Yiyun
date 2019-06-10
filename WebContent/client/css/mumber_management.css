@@ -1,0 +1,107 @@
+﻿body {
+    background-color:#eee;
+}
+
+#mm_head {
+    margin-top: 40px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#outer{
+    text-align:center;
+    margin-top:40px;
+    margin-bottom:30px;
+}
+
+#main {
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 400px;
+    background-color: #fff;
+    width: 80%;
+    box-shadow: 0 0 20px 5px #ddd;
+}
+
+#mum_in {
+    float: left;
+    display: inline;
+    height: 37px;
+    background-color: #AE0C2A;
+    color: #fff;
+    padding: 8px 25px;
+    border: solid 1px #eee;
+    border-radius:0;
+    font-size:1em;
+}
+    #mum_in:hover {
+        background-color: #580101;
+        background-color: #fff;
+        color: #AE0C2A;
+        outline: none;
+        border: solid 1px  #AE0C2A;
+    }
+
+    #mum_in + a {
+        display: inline;
+        float: left;
+        height: 35px;
+        padding: 8px 15px;
+        margin-left: 10px;
+        
+    }
+
+
+        .mum_searcher {
+            float: right;
+            width: 40%;
+        }
+#mm_button {
+    color: #fff;
+    background-color: #AE0C2A;
+    border-color: #AE0C2A;
+    height: 34px;
+    margin-left: -4px;
+}
+
+    #mm_button:hover {
+        background-color: #fff;
+        color: #AE0C2A;
+        outline: none;
+        border-color: #AE0C2A;
+    }
+
+.mm-name{
+    padding:15px 25px;
+    background-color:#db4f4f;
+    color:#fff;
+    font-weight:600;
+}
+
+.mm-info{
+    padding-left:15px;
+}
+
+.mm-info li {
+    list-style-type: none;
+    padding:10px 15px;
+    font-weight:600;
+}
+
+.mm-leibie{
+    text-align:left;
+    padding:15px 30px 15px;
+    border-bottom:solid 1px #eee;
+    font-weight:600;
+}
+.mm-mumber {
+    border-bottom: solid 1px #eee;
+    padding:0;
+    padding-left:20px;
+}
+    .mm-mumber li {
+        list-style-type: none;
+        padding: 10px 15px;
+        text-align: left;
+    }

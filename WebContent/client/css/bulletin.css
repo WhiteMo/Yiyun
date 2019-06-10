@@ -1,0 +1,749 @@
+﻿body{
+	background-color:#f6f6f6;
+}
+/*课程名称*/
+.className{
+	padding-left:29%;
+	padding-top:2%;
+	background-color:#f6f6f6;
+	font-size:30px;
+	color:#fdf5e6;
+	font-family:黑体;
+}
+.className:hover{
+	color:#582630;
+	text-decoration:none;
+}
+
+.className>a{
+	color:#582630;
+}
+.className>a:hover{
+	color:#efa97a;
+	text-decoration:none;
+}
+/*老师姓名*/
+.classTeacher{
+	padding-left:29%;
+	background-color:#f6f6f6;
+	font-size:20px;
+	color:#fe4c40;
+}
+.classTeacher>a{
+	color:#f17c67;
+}
+.classTeacher>a:hover{
+	color:#fe4c40;
+	text-decoration:none;
+}
+
+/*侧导航栏*/
+.sideNav{
+   margin-left:7%;
+   margin-top:1%;
+   background-color:#f6f6f6;
+   width:19%;
+   float:left;
+}
+.sideNav>ul{
+	background-color:#ab3234;
+	margin-top:6%;
+	height:100%;
+	padding:5px 4px 2px;
+	font-family:黑体;
+	border-bottom:1px solid #ab3234;
+	/*
+	border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;*/
+}
+.sideNav>ul>li{
+	background-color:#f8f8ff;
+	height:60px;
+	font-size:18px;
+	list-style:none;
+	text-align:center;
+	border-bottom:1px solid #ab3234;
+	line-height:84px;
+	
+}
+.sideNav>ul>li:hover{
+	background-color:#efa97a;
+	color:#FF5F3E;
+}
+.sideNav>ul>li>a{
+	color:#00000f;
+	text-decoration:none;
+}
+.sideNav>ul>li>a:hover{
+	text-decoration:none;
+}
+.sideNav>ul>li>a.hover{
+    color:white;
+}
+
+/********************1-1-3、公告****************************/
+/*公告栏外框*/
+.bulletinBody{
+	background-color:#f8f8ff;
+	width:60%;
+	margin-top:1%;
+	margin-left:3%;
+	border:2px solid #ab3234;
+	float:left;
+}
+/*公告栏头部提醒*/
+.waring{
+	background-color:#ab3234;
+	color:white;
+	width:94%;
+	text-align:center;
+	padding:5px 5px 5px;
+	font-family:黑体;
+	margin-left:3%;
+	margin-right:3%;
+	border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
+}
+/*“课程公告”“课件列表”“发起讨论”*/
+.bulletinTitle{
+	background-color:#f8f8ff;
+	height:10%;
+	font-size:25px;
+	line-height:75px;
+	border-bottom:1px solid #ab3234;
+	margin-left:3%;
+	margin-right:3%;
+	font-family:黑体;
+	color:#000000;
+}
+/*公告内容*/
+.bulletinContent{
+	background-color:#f8f8ff;
+	border-bottom:1px solid #ab3234;
+	margin-top:-20px;
+	margin-left:3%;
+	margin-right:3%;
+}
+/*新公告*/
+#news{
+	color:#bf0a10;
+	border-bottom:1px solid #ab3234;
+	margin-top:-20px;
+	margin-left:3%;
+	margin-right:3%;
+}
+.bulletinContent>h3
+{
+	padding-top:5px;
+}
+.bulletinContent>h4{
+	padding-top:-5px;
+}
+
+
+/***************************1-1-3-2、课件*****************************/
+/*课件界面外框*/
+.courseSource{
+	background-color:#f8f8ff;
+	width:60%;
+	height:800px;
+	float:left;
+	margin-left:1%;
+	margin-top:1%;
+	border:2px solid #ab3234;
+}
+
+/*具体课件的外框*/
+.source{
+	width:44%;
+	height:100px;
+	border:1px solid #ab3234;
+	margin-left:3%;
+	margin-top:2%;
+	margin-right:3%;
+	float:left;
+}
+/*课件logo*/
+.sourceLogo{
+	height:100%;
+	width:30%;
+	float:left;
+	background-color:#f8f8ff;
+	text-align:center;
+	padding-top:4%;
+}
+/*课件信息（关联课程及发布时间）*/
+.sourceInfo{
+	height:100%;
+	width:70%;
+	float:left;
+	background-color:#f8f8ff;
+	padding-top:5%;
+}
+.sourceInfo>a{
+	color:#000000;
+	text-decoration:none;
+	font-size:20px;
+}
+.sourceInfo>a:hover{
+	color:#0e4acc;
+}
+
+/*******************1-1-3-3、论坛******************/
+/*“课程讨论”*/
+.forumTitle{
+	background-color:#f8f8ff;
+	height:10%;
+	font-size:25px;
+	line-height:75px;
+	padding-left:3%;
+	font-family:黑体;
+}
+/*讨论内容*/
+.forumContent{
+	background-color:#f8f8ff;
+	border-bottom:1px solid #fffc66;
+	padding-top:5px;
+	padding-left:3%;
+	padding-right:3%;
+}
+.forumContent>a{
+	color:black;
+}
+.forumContent:hover{
+	background-color:#e6e365;
+}
+/*发起讨论按钮*/
+.operateButton{
+	background-color:#ab3234;
+	color:white;
+	width:20%;
+	text-align:center;
+	padding:3px 5px 5px;
+	font-family:黑体;
+	margin-left:3%;
+	margin-right:3%;
+	border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.operateButton:hover{
+	background-color:#bf0a10;
+}
+/*讨论排序方式的三个按钮*/
+.order{
+	background-color:#f8f8ff;
+	border-bottom:1px solid #ffa500;
+	padding-top:5px;
+	padding-left:50%;
+	padding-right:3%;
+	height:70px;
+	
+}
+/*具体排序方式（最新发表、最后回复、最多回复）*/
+.orderType{
+	float:left;
+	background-color:#f8f8f8;
+	border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+	margin-left:5%;
+	margin-right:5%;
+	width:22%;
+	height:50px;
+	text-align:center;
+	padding-top:4%;
+	font-family:黑体;
+}
+.orderType:hover{
+	background-color:#a35015;
+}
+.orderType>a{
+	color:#404040;
+	text-decoration:none;
+}
+
+
+/*********************************1-1-3-3-2、发起讨论*****************************/
+/*文本框/标题*/
+.bbsCreate{
+	background-color:#f8f8ff;
+	
+	padding-top:5px;
+	padding-left:3%;
+	padding-right:3%;
+}
+/*文本框头部*/
+.contentTitle{
+	width:80%;
+	background-color:#b3d1c1;
+	height:40px;
+	padding-left:2%;
+}
+/*字体、颜色等文本框头部设置*/
+.inputOperate{
+	background-color:#b3d1c1;
+	width:8%;
+	height:80%;
+	float:left;
+	margin-top:1%;
+	text-align:center;
+	padding-top:1%;
+}
+.inputOperate:hover{
+	background-color:#ab3234;
+}
+
+
+/********************************1-1-3-3-3、具体问题讨论********************************/
+/*讨论题目和关联课程*/
+.discussInfo{
+	background-color:#f8f8f8;
+	width:90%;
+	margin-left:3%;
+	padding-left:2%;
+	padding-top:2%;
+	height:auto;
+	border-bottom:1px solid #ab3234;
+}
+/*选择关注或回复*/
+.discussChoice{
+	width:90%;
+	height:45px;
+	background-color:#f8f8f8;
+	margin-left:3%;
+	padding-left:55%;
+}
+/*选择按钮*/
+.choiceType{
+	float:left;
+	font-family:黑体;
+	background-color:#ab3234;
+	border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+	margin-left:5%;
+	margin-right:5%;
+	margin-top:1%;
+	width:22%;
+	height:40px;
+	color:white;
+	text-align:center;
+	padding-top:4%;
+}
+.choiceType:hover{
+	background-color:#bf0a10;
+}
+/*回复排序的三种方式*/
+.discussOrder{
+	background-color:#f8f8ff;
+	border-bottom:1px solid #ab3234;
+	padding-top:5px;
+	
+	padding-right:3%;
+	height:50px;
+}
+/*具体排序方式（最新发表、最后回复、最多回复）*/
+.orderType2{
+	float:left;
+	font-family:黑体;
+	background-color:#f8f8f8;
+	border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+	margin-left:1%;
+	margin-right:1%;
+	width:15%;
+	height:30px;
+	text-align:center;
+	padding-top:1%;
+}
+.orderType2:hover{
+	background-color:#a35015;
+}
+.orderType2>a{
+	text-decoration:none;
+	color:#000000;
+}
+/*用户发表的回复*/
+.discussion{
+	background-color:#f8f8ff;
+	border-bottom:1px solid #ab3234;
+	
+	padding-right:3%;
+	height:200px;
+}
+/*用户信息*/
+.personInfo{
+	width:20%;
+	height:94%;
+	background-color:#dbd9ca;
+	float:left;
+	margin-top:1%;
+	
+	padding-top:4%;
+	padding-left:2%;
+}
+.personInfo>img{
+	width:90%;
+	height:62%
+}
+.personName{
+	width:90%;
+	height:20%;
+	background-color:#dbd9ca;
+	text-align:center;
+}
+.personName>a{
+	text-decoration:none;
+	color:#00000f;
+}
+.personName>a:hover{
+	color:#5d0f05;
+}
+
+/*用户发表的内容*/
+.personWord{
+	width:80%;
+	height:100%;
+	float:left;
+	background-color:#f8f8ff;
+	padding-top:2%;
+	padding-left:1%;
+}
+/*发表时间*/
+.discussDate{
+	width:100%;
+	height:10%;
+	background-color:#f8f8ff;
+	padding-left:80%;
+	padding-bottom:1%;
+}
+/*发表我的讨论*/
+.myThought{
+	padding-top:5px;
+	padding-left:3%;
+	padding-right:3%;
+	width:100%;
+	
+}
+
+/********************************新加内容******************************************/
+/**********************************1-1-3-4、提交作业，参加测试***************************************/
+/*外框架*/
+.WorkAndTest{
+	/*
+	background-color:#f8f8ff;
+	*/
+	width:60%;
+	margin-top:1%;
+	margin-left:3%;
+	/*border:1px solid #ab3234;*/
+	float:left;
+}
+/*“测验与作业”*/
+.bulletinTitle2{
+	background-color:#f6f6f6;
+	height:10%;
+	font-size:25px;
+	line-height:75px;
+	border-bottom:1px solid #ab3234;
+	margin-left:3%;
+	margin-right:3%;
+	font-family:黑体;
+	color:#000000;
+}
+/*
+.works{
+	width:90%;
+	height:600px;
+	background-color:gray;
+}
+.works>ul>li{
+	list-style:none;
+}
+.WorkList>ul>li{
+	list-style:none;
+}
+.WorkContent{
+	margin-left:-40px;
+	height:140px;
+	background-color:#ab3234;
+}
+.WorkTitle{
+	height:70px;
+	background-color:blue;
+	font-size:25px;
+	padding-top:20px;
+	padding-left:20px;
+}
+.WorkIntroduction{
+	height:70px;
+	background-color:white;
+	font-size:20px;
+	padding-left:20px;
+}
+*/
+
+/*作业、测试列表*/
+#navigation { 
+    width:94%; 
+    font-family:Arial; 
+    margin-left:3%;
+	margin-top:1%;
+	margin-bottom:5%;
+} 
+#navigation > ul { 
+    list-style-type:none;/* 不显示项目符号 */ 
+    margin:0px; 
+    padding:0px; 
+} 
+/*作业、测试标题（始终展示的部分）*/
+#navigation > ul > li { 
+    background-color:#ab3234; 
+    margin-bottom:40px;
+} 
+#navigation > ul > li > a{ 
+    display:block;/* 区块显示 */ 
+    padding:10px 5px 10px 0.5em; 
+    text-decoration:none; 
+    border-left:12px solid #ab3234;/* 左边的粗红边 */ 
+    border-right:1px solid #ab3234;/* 右侧阴影 */ 
+    font-size:25px;
+} 
+#navigation > ul > li > a:link, #navigation > ul > li > a:visited{ 
+    color:#FFFFFF; 
+} 
+#navigation > ul > li > a:hover{ /* 鼠标经过时 */ 
+ 
+} 
+
+
+
+/* 子菜单的CSS样式 */
+/*隐藏的部分*/ 
+#navigation ul li ul{ 
+    list-style-type:none; 
+    margin:0px; 
+    padding:0px 0px 0px 0px; 
+} 
+#navigation ul li ul li{ 
+    background-color:#f6f6f6;
+	border-left:3px solid #ab3234;
+	border-right:3px solid #ab3234;
+    border-bottom:6px solid #ab3234;
+} 
+#navigation ul li ul li a:link, #navigation ul li ul li a:visited{ 
+ 
+ 
+} 
+#navigation ul li ul li a:hover{ 
+
+
+} 
+#navigation ul li ul.myHide{ /* 隐藏子菜单 */ 
+    display:none; 
+} 
+#navigation ul li ul.myShow{ /* 显示子菜单 */ 
+    display:block; 
+} 
+
+/*测试的相关信息*/
+.partition{
+   height:50px;
+   margin-bottom:10px;
+}
+/*信息类型（截止时间、有效分数）*/
+.ContentType{
+   width:14%;
+   height:100%;
+   padding:15px 3px 3px 0.5em;  
+   float:left;
+   font-size:17px;
+   margin-left:5%;
+}
+/*信息内容*/
+.timeLimit{
+   float:left;
+   width:75%;
+   margin:15px 20px 0;
+}
+/*信息内容*/
+.timeWarnning{
+	float:left;
+   margin:5px 20px 0;
+   color:gray;
+   width:75%;
+}
+
+/*作业内容（附件、打分、评语、截止时间等）*/
+.WorkContent1{
+	padding-left:80%;
+	color:gray;
+	padding-top:10px;
+}
+.WorkContent2{
+	padding-left:5%;
+	font-size:18px;
+}
+.WorkContent2>a{
+	font-size:17px;
+	text-decoration:none;
+}
+.WorkContent3{
+	padding-left:7%;
+	font-size:15px;
+	margin-top:10px;
+	margin-bottom:10%;
+}
+.WorkContent4{
+	padding-left:7%;
+	font-size:15px;
+	margin-top:10px;
+	margin-bottom:10%;
+}
+.WorkContent4>a{
+	color:blue;
+	font-size:17px;
+	text-decoration:none;
+}
+.WorkContent5{
+	padding-left:7%;
+	font-size:15px;
+	margin-top:10px;
+	margin-bottom:5%;
+}
+.WorkContent5>a{
+	color:blue;
+	font-size:17px;
+	text-decoration:none;
+}
+.WorkContent6{
+	padding-left:15%;
+	font-size:25px;
+	margin-top:;
+}
+.WorkContent7{
+	padding-left:15%;
+	font-size:17px;
+}
+.WorkContent8{
+	padding-left:40%;
+	font-size:25px;
+	margin-top:5%;
+}
+.WorkContent9{
+	padding-left:45%;
+	font-size:50px;
+	
+}
+.WorkContent10{
+	padding-left:5%;
+	font-size:18px;
+	margin-top:5%;
+}
+.WorkContent11{
+	padding-left:7%;
+	font-size:15px;
+	margin-top:10px;
+	margin-bottom:10%;
+}
+.WorkContent11>a{
+	color:blue;
+	font-size:17px;
+	text-decoration:none;
+}
+
+/*已选择的文件*/
+.ChoosenFile{
+	height:25px;
+	width:200px;
+	background-color:white;
+	margin-right:20px;
+}
+/*浏览选择并提交文件按钮*/
+.ChooseFile{
+	width:40px;
+	height:25px;
+	background-color:#ab3234;
+	float:left;
+	text-align:center;
+	color:white;
+}
+/*删除已上传的文件按钮*/
+.DeleteFile{
+	width:40px;
+	height:25px;
+	background-color:#ab3234;
+	float:left;
+	text-align:center;
+	color:white;
+	margin-left:70px;
+}
+/*已提交的文件*/
+.SubmitFile{
+	float:left;
+}
+.SubmitFile>a{
+	text-decoration:none;
+	color:blue;
+}
+
+/*前往测验、提交作业等按钮*/
+.SaveButton{
+	margin-top:5%;
+	width:10%;
+	background-color:#ab3234;
+	height:40px;
+	margin-left:5%;
+	margin-bottom:3%;
+	color:white;
+	text-align:center;
+	padding-top:1%;
+	padding-bottom:1%;
+	border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.SaveButton>a{
+	text-decoration:none;
+	color:white;
+}
+
+
+#subButton{
+	background-color:#ab3234;
+	color:white;
+	border:2px solid #ab3234;
+	border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#subButton:hover{
+	background-color:#bf0a10;
+	border:2px solid #bf0a10;
+}
+
+
+
+#lanPos{
+	width:19%;
+	height:60px;
+	line-height:84px;
+	background:#F8F8F8;
+	border-left:5px solid #000000;
+	position:absolute;
+	left:-5px;
+	top:0;
+	z-index:-1;
+	transition:top .2s;}

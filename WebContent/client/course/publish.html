@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>course-live</title>
+	
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/comment.css">
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link href="../css/header_and_footer.css" rel="stylesheet" />
+	<script src="../js/jquery-3.3.1.js"></script>
+</head>
+	<script language="javascript">
+							//var str = "http://www.helpexamples.com/flash/video/water.flv";
+							//var str2 = "1";
+
+							//playswf(str,str2);
+							var str = "rtmp://183.174.60.25:1935/live";
+							//var str1 = "rtmp://[2401:ec00:21:9:baca:3aff:fe61:74c1]:1935/live";
+							var str2 = "lrx";
+							playswf("","");
+							function playswf(sFile,sFile2)
+							{
+								var flag = 0;
+								if (sFile != " && sFile2 != "")
+								{
+									flag = 1;
+								}
+								else
+								{
+									flag = 0;
+								}
+								$('#player').html('<embed height="600" width="900" src="tuiliu.swf?userTxt='+sFile+'&&userStream='+sFile2+'" type="application/x-shockwave-flash" ></embed>');
+							//	document.write('<embed height="600" width="900" src="tuiliu.swf?userTxt='+sFile+'&&userStream='+sFile2+'" type="application/x-shockwave-flash" ></embed>');
+							}
+						
+							</script>
+<body style="padding-top:60px;margin-top:60px; margin:8px 0 0 0;">
+<iframe src="../header_and_footer/header.html" id="iframe-header"></iframe> 
+	<div class="container">
+		<!--标题-->
+		<div class="row clearfix">
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<div class="page-header">
+					<h1>
+						课程名称 <small id="onlive"> （正在推流） </small>
+					</h1>
+				</div>
+			</div>
+		</div>
+		<div class="row clearfix">
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<div id="willesPlay">
+					<!--播放器头部-->
+					<!--播放器内容-->
+					<div class="playContent" width="100%" height="600px">
+							<div id="player">
+							</div>
+							<input type="button" value="start" onclick="playswf(str,str2)" />
+							<input type="button" value="stop" onclick="playswf('','')" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<iframe src="../header_and_footer/footer.html" id="iframe-footer"></iframe> 
+	<script src="../js/jquery-3.3.1.js"></script>
+	<script src="../js/jquery.flexText.js"></script>
+    <script src="../js/require.js"></script> 
+	<script src="../js/bootstrap.js"></script>
+	<script src="../js/comment.js"></script>
+	<script src="../js/header-and-footer.js"></script>
+</body>
+</html>

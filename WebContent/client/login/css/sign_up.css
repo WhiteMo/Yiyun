@@ -1,0 +1,144 @@
+﻿html {
+    height: 100%;
+}
+body {
+    /*background-color: #cd0a1b;*/
+    background-color:#eee;
+    height: 100%;
+    overflow:hidden;
+   
+}
+.main {
+    height: 400px;
+    width: 150%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    /*background-color: #cd0a1b;*/
+    background-color: #fff;
+    text-align:center;
+}
+#triangle-topleft {
+    width: 0;
+    height: 0;
+    /*border-top: 400px solid #f7e6e6;*/
+    border-top: 400px solid #b5292a;
+    border-right: 100px solid transparent;
+    float: left;
+    /*position: absolute;
+    left: calc(50% - 51px);*/
+}
+#triangle-bottomright {
+    width: 0;
+    height: 0;
+    /*border-bottom: 400px solid #f7e6e6;*/
+    border-bottom: 400px solid #b5292a;
+    border-left: 100px solid transparent;
+    float: left;
+    margin-left: -96px;
+    /*position: absolute;
+    left: calc(50% - 49px);*/
+}
+#student {
+    float: left;
+    background-color: #b5292a;
+    /*opacity: 0.9;*/
+    height: 400px;
+    width: calc(33.333% - 52px);
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    
+}
+
+    #student:hover {
+        width: calc(40% - 52px)
+    }
+
+#teacher {
+    float: left;
+    background-color: #b5292a;
+    /*opacity: 0.9;*/
+    height: 400px;
+    width: calc(45% - 52px);
+}
+
+.stu_img {
+    border-radius: 50%;
+    float: right;
+    margin-top: 100px;
+    margin-right: calc(27% - 52px);
+}
+    .stu_img img {
+        height: 150px;
+        width: 150px;
+        border: 8px solid #d6d7d8;
+        border-radius: 50%;
+    }
+
+.tea_img {
+    border-radius: 50%;
+    float: left;
+    margin-top: 100px;
+    margin-left: calc(20% - 52px);
+}
+
+    .tea_img img {
+        height: 150px;
+        width: 150px;
+        border: 8px solid #d6d7d8;
+        border-radius: 50%;
+    }
+
+.stu_img div {
+    text-align: center;
+    padding-top: 20px;
+    color: #d6d7d8;
+    font-size: 1.4em;
+}
+.tea_img div {
+    text-align: center;
+    padding-top: 20px;
+    color:#d6d7d8;
+    font-size:1.4em;
+}
+
+.stu_big {
+    border-radius: 50%;
+    float: right;
+    margin-top: 100px;
+    margin-right: calc(27% - 52px);
+}
+    .stu_big img {
+        height: 150px;
+        width: 150px;
+        border: 8px solid #fff;
+        border-radius: 50%;
+    }
+
+.tea_big {
+    border-radius: 50%;
+    float: left;
+    margin-top: 100px;
+    margin-left: calc(20% - 52px);
+}
+
+    .tea_big img {
+        height: 150px;
+        width: 150px;
+        border: 8px solid #fff;
+        border-radius: 50%;
+    }
+
+.stu_big div {
+    text-align: center;
+    padding-top: 20px;
+    color: #fff;
+    font-size: 1.4em;
+}
+.tea_big div {
+    text-align: center;
+    padding-top: 20px;
+    color:#fff;
+    font-size:1.4em;
+}

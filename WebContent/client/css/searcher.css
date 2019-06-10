@@ -1,0 +1,118 @@
+﻿body {
+    background-color: #eee;
+}
+
+.searcher-searcher {
+    height: 100px;
+    margin-top: 50px;
+    margin-bottom:50px;
+    /*padding: 10px 0;*/
+}
+    .searcher-searcher .row .col-xs-3 {
+        padding: 25px 0 25px 10px;
+    }
+    .searcher-searcher .row .col-xs-7 {
+        padding: 30px 0;
+    }
+
+
+
+.searcher-searcher img {
+    height: 100%;
+    margin-top:-20px;
+    margin-right:30px;
+}
+
+#searcher-searcher-brand {
+    height: 100%;
+    /*padding: 10px 25px;*/
+    /*padding-top:100px;*/
+    margin-bottom:20px;
+    font-size: 3em;
+    font-weight: 600;
+    display:inline;
+}
+
+.searcher-searcher-form {
+    margin-top: 10px;
+}
+
+.searcher-searcher-form input {
+    width: 70%;
+}
+
+.searcher-searcher-form button {
+    width: 70px;
+    background-color: #AE0C2A;
+    color: #fff;
+    outline: none;
+    border-color: #AE0C2A;
+}
+
+.searcher-searcher-form button:hover,
+.searcher-searcher-form button:focus {
+    outline: none;
+    background-color: #fff;
+    color: #AE0C2A;
+    border-color: #AE0C2A;
+}
+
+.searcher-selecter {
+    background-color: #fff;
+    box-shadow: 2px 2px 3px #aaaaaa;
+    padding: 20px 30px;
+}
+
+.searcher-selecter-content {
+    padding: 10px;
+}
+
+.searcher-selecter-content h4 {
+    display: inline;
+    padding-bottom: 20px;
+    margin-right: 20px;
+}
+
+.searcher-selecter-content a {
+    display: inline;
+    border: none;
+    border-radius: 0;
+    margin-right: 10px
+}
+
+.searcher-selecter-active,
+.searcher-selecter-content a:hover,
+.searcher-selecter-content a:focus {
+    background-color: #AE0C2A !important;
+    color: #fff !important;
+    border-radius: 0 !important;
+}
+
+.searcher-show {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    box-shadow: 2px 2px 3px #aaaaaa;
+    min-height: 500px;
+    padding: 30px;
+}
+
+.searcher-show-course {
+    padding: 20px 30px 5px 30px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.view-first img {
+    height: 180px;
+    width: 280px;
+}
+
+.searcher-show-info {
+    min-height: 200px!important;
+    margin-left: 330px;
+}
+
+.searcher-myview {
+    margin: 0;
+}

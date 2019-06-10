@@ -1,0 +1,759 @@
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+<title>亦云课堂</title>
+<link
+	href="https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Slab%7CMaterial+Icons"
+	rel="stylesheet">
+<link href="http://www.1y.net/client/css/homepage.css" rel="stylesheet">
+<link href="http://www.1y.net/client/css/shouyetou.css" rel="stylesheet">
+<!-- Bootstrap core CSS -->
+<link href="http://www.1y.net/client/css/bootstrap.min.css"
+	rel="stylesheet">
+<link rel="stylesheet"
+	href="http://www.1y.net/client/css/owl.carousel.css">
+<link rel="stylesheet" href="http://www.1y.net/client/css/owl.theme.css">
+<link rel="icon"
+	href="http://www.1y.net/client/image/header_brand_image.png"
+	type="image/x-icon">
+
+<!-- Custom styles for this template -->
+<link href="http://www.1y.net/client/css/carousel.css" rel="stylesheet">
+<script src="http://www.1y.net/client/js/owl.carousel.min.js"></script>
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="http://www.1y.net/client/js/jquery-3.3.1.js"></script>
+<script>
+	window.jQuery
+			|| document
+					.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+</script>
+<script src="http://www.1y.net/client/js/bootstrap.min.js"></script>
+<!-- Just to make our placeholder image work. Don't actually copy the next line! -->
+<script src="http://www.1y.net/client/js/holder.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+<link href="./css/jquery.pagewalkthrough.css" rel="stylesheet">
+<!--引入新的css-->
+<script src="./js/jquery.pagewalkthrough.min.js"></script>
+<!--引入新包-->
+<script type="text/javascript">
+	function search(str) {
+		window.event.returnValue = false;
+		$.post(basePath + "/SearchAction", {
+			str : str
+		});
+	}
+</script>
+<link href="http://www.1y.net/client/css/shouyetou.css" rel="stylesheet">
+<style>
+.wrap {
+	width: 20px;
+	margin-top: 12px;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.img {
+	width: 20px;
+	height: 20px;
+}
+
+.notice {
+	margin-top: 7px;
+	width: 17px;
+	height: 17px;
+	line-height: 20px;
+	font-size: 10px;
+	color: #000;
+	text-align: center;
+	background-color: #FFD700;
+	border-radius: 50%;
+	position: absolute;
+	right: -10px;
+	top: -10px;
+}
+
+#walkthrough-content {
+	display: none
+}
+
+#walkthrough-content h3 {
+	height: 30px;
+	line-height: 30px
+}
+
+#walkthrough-content p {
+	line-height: 28px
+}
+</style>
+</head>
+<body>
+	<!-- 
+	<div class="rongqi">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-xs-12 col-sm-12">
+					<div class="yetou">
+						<img src="http://www.1y.net/client/image/yetou.png" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	 -->
+	<div id="header-body">
+		<div class="container lvrongqi">
+			<div class="col-xs-1 col-sm-1" style="font-size: 36px;">&emsp;&emsp;&emsp;</div>
+			<div class="col-xs-10 col-sm-10">
+				<nav class="row header-nav navbar navbar-inverse navbar-fixed-top ">
+					<div class="container-fluid">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed"
+								data-toggle="collapse"
+								data-target="#bs-example-navbar-collapse-1"
+								aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span> <span
+									class="icon-bar"></span> <span class="icon-bar"></span> <span
+									class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" id="header_brand" href="#"> <img
+								alt="Brand" id="brand_img"
+								src="http://www.1y.net/client/image/header_brand_image.png">
+								<span style="float: left; padding: 10px 5px;">亦云课堂</span>
+							</a>
+						</div>
+						<div class="collapse navbar-collapse"
+							id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+
+								<li><a href="http://www.1y.net/client/index.jsp">首页</a></li>
+
+								<li class="">
+									<form id="header-searcher" class="navbar-form  navbar-right"
+										style="margin-top: 7px; margin-bottom: 7px;"
+										action="/SearchAction">
+										<span class="form-group"> <input
+											id="header-searcher-input" type="text" class="form-control"
+											placeholder="搜索" name="str">
+										</span> <input type="submit" id="footer-searcher-button" value="搜索"
+											class="btn btn-default glyphicon glyphicon-search">
+
+
+									</form>
+								</li>
+
+
+								<li class="dropdownc user-menu open"><a href="#"
+									class="dropdown-toggle" data-toggle="dropdown" style=""
+									aria-expanded="true"> <!-- The user image in the navbar-->
+
+										<img src="http://www.1y.net/image/1525848538803.jpg"
+										class="user-image" style="height: 30px; margin-top: -10px;"
+										alt="User Image"> <!-- hidden-xs hides the username on small devices so only the image appears. -->
+										<span class="hidden-xs">刘专 <b class="caret"></b></span>
+								</a>
+									<ul class="dropdown-menu">
+
+										<li><a
+											href="http://www.1y.net/client/pcenter/pc_student.jsp?id=68">个人主页</a></li>
+										<li></li>
+										<li><a id="mycourse"
+											href="http://www.1y.net/client/course/student/course.jsp?id=68">我的课程</a></li>
+										<li></li>
+										<li><a
+											href="http://www.1y.net/client/pcenter/update_pinfo.jsp?id=68">资料修改</a></li>
+										<li><a href="/UserAction?type=cancelLoad">退出</a></li>
+									</ul></li>
+
+
+
+								<li><a href="http://www.1y.net/client/help/help.jsp">帮助</a></li>
+							</ul>
+						</div>
+						<!-- /.navbar-collapse -->
+					</div>
+					<!-- /.container-fluid -->
+				</nav>
+			</div>
+			<div class="col-xs-1 col-sm-1"></div>
+		</div>
+	</div>
+	<div id="myCarousel" class="carousel slide" style="margin-bottom: 0px"
+		data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+
+
+			<li data-target="#myCarousel" data-slide-to="0" class=""></li>
+
+
+
+
+
+			<li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+
+
+
+
+			<li data-target="#myCarousel" data-slide-to="2" class=""></li>
+
+
+		</ol>
+		<div class="carousel-inner" role="listbox">
+
+
+			<div class="item active left">
+				<div class="expand">
+					<img class="first-slide"
+						src="http://www.1y.net/image/1533533966448.jpg" alt="First slide">
+				</div>
+				<div class="container">
+					<div class="carousel-caption">
+						<h1>唐诗讲堂</h1>
+						<p>一节很有意思的课</p>
+						<p>
+							<a class="btn btn-lg btn-primary" href="" role="button">了解更多</a>
+						</p>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+			<div class="item next left">
+				<div class="expand">
+					<img class="second-slide"
+						src="http://www.1y.net/image/1534263055210.jpg" alt="Second slide">
+				</div>
+				<div class="container">
+					<div class="carousel-caption">
+						<h1>数据库</h1>
+						<p>数据库基础速成</p>
+						<p>
+							<a class="btn btn-lg btn-primary" href="" role="button">了解更多</a>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="item">
+				<div class="expand">
+					<img class="second-slide"
+						src="http://www.1y.net/image/1526606619823.png" alt="Second slide">
+				</div>
+				<div class="container">
+					<div class="carousel-caption">
+						<h1>跟我学</h1>
+						<p></p>
+						<p>
+							<a class="btn btn-lg btn-primary" href="" role="button">了解更多</a>
+						</p>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+		<a class="left carousel-control" href="#myCarousel" role="button"
+			data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"
+			aria-hidden="true"></span> <span class="sr-only">Previous</span>
+		</a> <a class="right carousel-control" href="#myCarousel" role="button"
+			data-slide="next"> <span
+			class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+	<div class="container" style="margin-bottom: 4rem;"></div>
+	<!--广告位结束-->
+	<!--讨论区-->
+	<div class="changecolor">
+		<div class="container ">
+			<div class="row">
+
+				<div class=" col-sm-4 col-xs-4">
+					<div class="HOT baikapian" style="max-width: 100%">
+						<div class="remen">热门话题</div>
+						<div class="row">
+							<div class="hottopic col-xs-7">
+								<a href="http://www.1y.net/client/article/article.jsp?id=59">
+									从构建分布式秒杀系统聊聊线程池 </a>
+							</div>
+							<div class="hotpic col-xs-3">
+								<img src="http://www.1y.net/client/image/hot1.jpg">
+							</div>
+						</div>
+
+						<div class="hotcontent"></div>
+						<a href="http://www.1y.net/client/article/article.jsp?id=59">
+							<div class="tiaozhuan">
+								了解详情<span class="glyphicon glyphicon-arrow-right"></span>
+							</div>
+						</a>
+
+						<div class="wangqi">往期回顾</div>
+
+
+
+
+
+						<div class="row" style="margin-top: 10px">
+							<div class="zuowenzi col-xs-6">
+								<a style="color: black"
+									href="http://www.1y.net/client/article/article.jsp?id=60">你或许不知道Vue的这些小技巧</a>
+							</div>
+							<div class="hotpic col-xs-4">
+								<img
+									src="http://ww1.sinaimg.cn/large/005Y4rCogy1fry5mboqkdj30qe0hl4qp.jpg">
+							</div>
+						</div>
+
+
+
+
+						<div class="row" style="margin-top: 10px">
+							<div class="zuowenzi col-xs-6">
+								<a style="color: black"
+									href="http://www.1y.net/client/article/article.jsp?id=61">谈谈为什么需要服务治理（Dubbo）</a>
+							</div>
+							<div class="hotpic col-xs-4">
+								<img
+									src="https://oda3wj69k.qnssl.com/%E6%9E%B6%E6%9E%84%E5%9B%BE.png">
+							</div>
+						</div>
+
+
+
+					</div>
+				</div>
+
+
+				<div class=" col-sm-4 col-xs-4">
+
+
+
+
+					<div class="baikapian wenzhang">
+						<div class="shouji">
+							<span class="glyphicon glyphicon-book"></span>&ensp;手记文章
+						</div>
+
+						<div class="row">
+							<div class="wentopic col-xs-8">内网穿透神器：Ngrok在支付中的正确使用姿势</div>
+							<div class="hotpic col-xs-3">
+								<img src="https://img.mukewang.com/5b16603c0001a9f310210493.png">
+							</div>
+						</div>
+
+						<div class="hotcontent">随着互联网的发展，无论是web服务还是移动APP越来越多的都集成了第三方支付(支付宝、微信、银联)。通常作为服务提供方，支付成功以后都会有一个后端回调URL来通知是否调用者是否支付成功，这个URL必须是公网环境，并且可以被访问到。然而在实际开发测试环境中，我们一般都是在内网开发，所以说对于支付测试是一件比较麻烦的事情。</div>
+
+						<a href="http://www.1y.net/client/article/article.jsp?id=62">
+							<div class="tiaozhuan">
+								阅读全文<span class="glyphicon glyphicon-arrow-right"></span>
+							</div>
+						</a>
+
+					</div>
+
+
+
+					<div class="baikapian wenzhang">
+						<div class="shouji">
+							<span class="glyphicon glyphicon-book"></span>&ensp;手记文章
+						</div>
+
+						<div class="row">
+							<div class="wentopic col-xs-8">小程序如何解决重复点击？</div>
+							<div class="hotpic col-xs-3">
+								<img
+									src="http://www.1y.nethttp://www.1y.net/client/image/hot1.jpg">
+							</div>
+						</div>
+
+						<div class="hotcontent">小程序有非常蛋疼的问题，没有很好的优化事件机制，导致重复点击会触发多次（如果打开页面，快速多次点击，会打开多个重复的页面，返回时就会关掉一个还有一个...）</div>
+
+						<a href="http://www.1y.net/client/article/article.jsp?id=63">
+							<div class="tiaozhuan">
+								阅读全文<span class="glyphicon glyphicon-arrow-right"></span>
+							</div>
+						</a>
+
+					</div>
+
+				</div>
+				<div class=" col-sm-4 col-xs-4">
+
+					<div class="question baikapian">
+						<div class="shouji">
+							<span class="glyphicon glyphicon-question-sign"></span>&ensp;问题讨论
+						</div>
+						<div class="ques">刚上班我想请教一个问题</div>
+						<div class="request">一个很简单的问题，但是我老是搞不懂，求各位大神解答！本人零基础。</div>
+						<a href="http://www.1y.net/client/article/article.jsp?id=64">
+							<div class="tiaozhuan">
+								查看详情<span class="glyphicon glyphicon-arrow-right"></span>
+							</div>
+						</a>
+					</div>
+
+
+					<div class="question baikapian">
+						<div class="shouji">
+							<span class="glyphicon glyphicon-question-sign"></span>&ensp;问题讨论
+						</div>
+						<div class="ques">开发工具怎么下载？</div>
+						<div class="request">最常用的网页制作开发工具，推荐两三个 好用的 ？</div>
+						<a href="http://www.1y.net/client/article/article.jsp?id=65">
+							<div class="tiaozhuan">
+								查看详情<span class="glyphicon glyphicon-arrow-right"></span>
+							</div>
+						</a>
+					</div>
+
+
+					<div class="question baikapian">
+						<div class="shouji">
+							<span class="glyphicon glyphicon-question-sign"></span>&ensp;问题讨论
+						</div>
+						<div class="ques">手机端滑动切换导航栏更换页面内容？</div>
+						<div class="request">左滑右滑都可切换导航栏 并且导航栏是超出状态
+							内容区域内容是相同的只是根据导航选中的具体项刷新显示不同的内容而已，有谁知道怎么做到吗</div>
+						<a href="http://www.1y.net/client/article/article.jsp?id=66">
+							<div class="tiaozhuan">
+								查看详情<span class="glyphicon glyphicon-arrow-right"></span>
+							</div>
+						</a>
+					</div>
+
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!--讨论区结束-->
+	<!--课程推荐-->
+	<div class="biaoti">课&ensp;/&ensp;程&ensp;/&ensp;推&ensp;/&ensp;荐</div>
+	<div class="container">
+		<div class="row">
+
+
+			<div class="col-md-3 col-lg-3  col-sm-6 col-xs-6">
+				<a href="http://www.1y.net/client/course/course_info.jsp?id=25">
+					<div class="kapian">
+						<div class="pic">
+							<img src="/image/1526606557282.jpg">
+						</div>
+						<div class="txt">
+							<h3>数据库教学</h3>
+							<h4>中国人民大学刘专</h4>
+							<div class="jianjie"></div>
+							<div class="pingfen">评分：</div>
+							<div class="score">9.5</div>
+							<div class="userdata">
+								<span class="glyphicon glyphicon-thumbs-up"></span>
+							</div>
+						</div>
+					</div>
+				</a>
+
+			</div>
+
+			<div class="col-md-3 col-lg-3  col-sm-6 col-xs-6">
+				<a href="http://www.1y.net/client/course/course_info.jsp?id=26">
+					<div class="kapian">
+						<div class="pic">
+							<img src="/image/1526434296835.jpg">
+						</div>
+						<div class="txt">
+							<h3>唐诗艺术</h3>
+							<h4>北京大学宗巍阳</h4>
+							<div class="jianjie"></div>
+							<div class="pingfen">评分：</div>
+							<div class="score">9.5</div>
+							<div class="userdata">
+								<span class="glyphicon glyphicon-thumbs-up"></span>
+							</div>
+						</div>
+					</div>
+				</a>
+
+			</div>
+
+			<div class="col-md-3 col-lg-3  col-sm-6 col-xs-6">
+				<a href="http://www.1y.net/client/course/course_info.jsp?id=27">
+					<div class="kapian">
+						<div class="pic">
+							<img src="/image/1526434279675.jpg">
+						</div>
+						<div class="txt">
+							<h3>演艺艺术</h3>
+							<h4>清华大学胡歌</h4>
+							<div class="jianjie"></div>
+							<div class="pingfen">评分：</div>
+							<div class="score">9.5</div>
+							<div class="userdata">
+								<span class="glyphicon glyphicon-thumbs-up"></span>
+							</div>
+						</div>
+					</div>
+				</a>
+
+			</div>
+
+			<div class="col-md-3 col-lg-3  col-sm-6 col-xs-6">
+				<a href="http://www.1y.net/client/course/course_info.jsp?id=28">
+					<div class="kapian">
+						<div class="pic">
+							<img src="/image/1526607020494.jpg">
+						</div>
+						<div class="txt">
+							<h3>计算机python</h3>
+							<h4>哈弗大学刘桐羽</h4>
+							<div class="jianjie"></div>
+							<div class="pingfen">评分：</div>
+							<div class="score">9.5</div>
+							<div class="userdata">
+								<span class="glyphicon glyphicon-thumbs-up"></span>
+							</div>
+						</div>
+					</div>
+				</a>
+
+			</div>
+
+		</div>
+	</div>
+	<!--课程推荐结束-->
+	<!--新课推荐-->
+	<div class="biaoti">新&ensp;/&ensp;上&ensp;/&ensp;好&ensp;/&ensp;课</div>
+	<div class="container">
+		<div class="row">
+
+
+			<div class="col-md-3 col-lg-3  col-sm-6 col-xs-6">
+				<a href="http://www.1y.net/client/course/course_info.jsp?id=25">
+					<div class="kapian">
+						<div class="pic">
+							<img src="/image/1526606557282.jpg">
+						</div>
+						<div class="txt">
+							<h3>数据库教学</h3>
+							<h4>中国人民大学刘专</h4>
+							<div class="jianjie"></div>
+							<div class="pingfen">评分：</div>
+							<div class="score">9.5</div>
+							<div class="userdata">
+								<span class="glyphicon glyphicon-thumbs-up"></span>
+							</div>
+						</div>
+					</div>
+				</a>
+
+			</div>
+
+			<div class="col-md-3 col-lg-3  col-sm-6 col-xs-6">
+				<a href="http://www.1y.net/client/course/course_info.jsp?id=26">
+					<div class="kapian">
+						<div class="pic">
+							<img src="/image/1526434296835.jpg">
+						</div>
+						<div class="txt">
+							<h3>唐诗艺术</h3>
+							<h4>北京大学宗巍阳</h4>
+							<div class="jianjie"></div>
+							<div class="pingfen">评分：</div>
+							<div class="score">9.5</div>
+							<div class="userdata">
+								<span class="glyphicon glyphicon-thumbs-up"></span>
+							</div>
+						</div>
+					</div>
+				</a>
+
+			</div>
+
+			<div class="col-md-3 col-lg-3  col-sm-6 col-xs-6">
+				<a href="http://www.1y.net/client/course/course_info.jsp?id=27">
+					<div class="kapian">
+						<div class="pic">
+							<img src="/image/1526434279675.jpg">
+						</div>
+						<div class="txt">
+							<h3>演艺艺术</h3>
+							<h4>清华大学胡歌</h4>
+							<div class="jianjie"></div>
+							<div class="pingfen">评分：</div>
+							<div class="score">9.5</div>
+							<div class="userdata">
+								<span class="glyphicon glyphicon-thumbs-up"></span>
+							</div>
+						</div>
+					</div>
+				</a>
+
+			</div>
+
+			<div class="col-md-3 col-lg-3  col-sm-6 col-xs-6">
+				<a href="http://www.1y.net/client/course/course_info.jsp?id=28">
+					<div class="kapian">
+						<div class="pic">
+							<img src="/image/1526607020494.jpg">
+						</div>
+						<div class="txt">
+							<h3>计算机python</h3>
+							<h4>哈弗大学刘桐羽</h4>
+							<div class="jianjie"></div>
+							<div class="pingfen">评分：</div>
+							<div class="score">9.5</div>
+							<div class="userdata">
+								<span class="glyphicon glyphicon-thumbs-up"></span>
+							</div>
+						</div>
+					</div>
+				</a>
+
+			</div>
+
+		</div>
+	</div>
+
+
+	<div id="footer-body">
+		<div class="container">
+			<div class="footer-brand text-center">
+				<img src="http://www.1y.net/client/image/header_brand_image.png">
+				<h2 class="">亦云课堂</h2>
+			</div>
+			<hr style="color: #fff; margin: -10px 0 10px 0;">
+			<div class="row footer-text">
+				<div class="col-sm-4 col-xs-12">
+					<h4 style="color: #fff; padding-top: 0; padding-left: 10px"></h4>
+					<div class="footer-sort">
+						<a></a> <a></a>
+					</div>
+				</div>
+				<div class="col-sm-4 col-xs-12">
+					<a href="http://www.1y.net/client/introduction/introduction.jsp">
+						<h4 style="color: #fff; padding-top: 0; padding-left: 10px">
+							联系我们</h4>
+					</a>
+					<div style="width: 20px"></div>
+					<div class="footer-icon">
+						<img src="http://www.1y.net/client/image/wechat_1.png"
+							onmouseover="footer_change_img()" id="footer-wechat"
+							onmouseout="footer_change_back_img()">
+					</div>
+				</div>
+			</div>
+
+			<div style="color: #555; margin-top: 20px" class="text-center">Copyright
+				© 2018 School of Information, Renmin University of China. All rights
+				reserved.</div>
+
+		</div>
+	</div>
+
+	<!--新添加的-->
+	<div id="walkthrough-content">
+		<div id="walkthrough-1">
+			<h3>欢迎来到亦云直播课堂</h3>
+
+			<p>亦云直播课堂是一款实现多种上课需求，能够实时和老师互动的课堂平台</p>
+			<p>点击下一步了解更多...</p>
+		</div>
+
+		<div id="walkthrough-2">这里是亦云的LOGO，点击这里可以直通网站首页。</div>
+
+		<div id="walkthrough-3">点击这里可以搜索课程。</div>
+		<div id="walkthrough-4">这里是热门讨论区，快去看看大家都在聊些什么吧。</div>
+		<div id="walkthrough-5">登录后点击这里查看我的课程。</div>
+
+		
+	</div>
+
+	<script>
+		$(function() {
+			// Set up tour
+			$('body').pagewalkthrough({
+				name : 'introduction',
+				steps : [ {
+					popup : {
+						content : '#walkthrough-1',
+						type : 'modal'
+					}
+				}, {
+					wrapper : 'div.navbar-header',
+					popup : {
+						content : '#walkthrough-2',
+						type : 'tooltip',
+						position : 'bottom'
+					}
+				}, {
+					wrapper : '#header-searcher-input',
+					popup : {
+						content : '#walkthrough-3',
+						type : 'tooltip',
+						position : 'bottom'
+					}
+				},
+				{
+					wrapper : 'div.remen',
+					popup : {
+						content : '#walkthrough-4',
+						type : 'tooltip',
+						position : 'top'
+					}
+				} ,  
+				{
+					wrapper : '#mycourse',
+					popup : {
+						content : '#walkthrough-5',
+						type : 'tooltip',
+						position : 'bottom'
+					}
+				}],
+				onClose : function(){
+					location.href="introduct2.html";
+				},
+				buttons:{
+					jpwFinish:{
+						i18n:"完成",
+					},
+					jpwPrevious:{
+						i18n:"上一步",
+					},
+					jpwNext:{
+						i18n:"下一步"
+					},
+					jpwClose:{
+						i18n:"退出引导"
+					}
+				}
+				
+			});
+
+			// Show the tour
+			$('body').pagewalkthrough('show');
+
+			var w = $('.overlay-hole').width();
+			var h = $('.overlay-hole').height();
+			$(".overlay-hole").css({
+				"margin-left" : "80px",
+				"margin-top" : "160px"
+			});
+
+		});
+	</script>
+
+</body>
+</html>

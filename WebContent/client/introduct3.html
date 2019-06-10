@@ -1,0 +1,256 @@
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+<title>课程详情</title>
+<!-- css -->
+<link href="../client/css/bootstrap.css" rel="stylesheet">
+<link href="../client/css/header_and_footer.css" rel="stylesheet">
+<link href="../client/css/bulletin.css" rel="stylesheet">
+
+<!--javascript-->
+<script src="http://www.1y.net/client/js/jquery-3.3.1.js"></script>
+<script src="../client/js/require.js"></script>
+<script src="../client/js/bootstrap.js"></script>
+<link href="../client/css/header_and_footer.css" rel="stylesheet">
+
+<link href="./css/jquery.pagewalkthrough.css" rel="stylesheet">
+<!--引入新的css-->
+<script src="./js/jquery.pagewalkthrough.min.js"></script>
+
+</head>
+<body style="padding-top: 50px">
+
+
+
+
+	<nav class="header-nav navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+					aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" id="header_brand" href="#"
+					onclick="window.location.href='http://www.1y.net/client/index.jsp'"> <img
+					alt="Brand" id="brand_img"
+					src="http://www.1y.net/client/image/header_brand_image.png"> <span
+					style="float: left; padding: 10px 5px">亦云课堂</span>
+				</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse"
+				id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+
+					<li><a href="http://www.1y.net/client/index.jsp">首页</a></li>
+
+
+
+
+					<li class="dropdownc user-menu"><a class="dropdown-toggle"
+						data-toggle="dropdown"> <img src="http://www.1y.net/image/1525848538803.jpg"
+							class="user-image" style="height: 30px" alt="User Image"> <!-- hidden-xs hides the username on small devices so only the image appears. -->
+							<span class="hidden-xs">刘专 <b class="caret"></b></span>
+					</a>
+						<ul class="dropdown-menu">
+
+							<li><a href="http://www.1y.net/client/pcenter/pc_student.jsp?id=68">个人主页</a></li>
+							<li></li>
+							<li><a href="http://www.1y.net/client/course/student/course.jsp?id=68">我的课程</a></li>
+							<li><a href="http://www.1y.net/client/pcenter/update_pinfo.jsp?id=68">资料修改</a></li>
+							<li><a href="/UserAction?type=cancelLoad">退出</a></li>
+
+
+
+
+						</ul></li>
+
+					<li><a href="http://www.1y.net/client/help/help.jsp">帮助</a></li>
+
+
+				</ul>
+
+
+
+
+				<li>
+					<form id="header-searcher"
+						class="navbar-form navbar-left navbar-right"
+						action="/SearchAction">
+						<span class="form-group"> <input id="header-searcher-input"
+							type="text" class="form-control" placeholder="搜索" name="str">
+						</span> <input type="submit" id="footer-searcher-button" value="搜索"
+							class="btn btn-default"> <span
+							class="glyphicon glyphicon-search" aria-hidden="true"></span>
+
+						<!--button type="button" id="footer-searcher-button"
+											class="btn btn-default" onclick="return header_searcher()">
+											<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+										</button-->
+					</form>
+				</li>
+
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+
+
+
+
+	<!--动态包含-->
+	<div class="className">
+		<a href="#" target="_blank">数据库教程</a>
+	</div>
+	<div class="classTeacher">
+		<a href="#" target="_blank">刘专</a>
+	</div>
+	<div class="sideNav">
+		<img src="http://www.1y.net/image/1526268446388.jpg"
+			style="width: 100%; height: 150px;">
+		<ul>
+
+			<li style="background-color: #ab3234"><a class="hover" href="#"
+				target="_blank"> <span class="glyphicon glyphicon-th-list"
+					aria-hidden="true"></span>&nbsp;公告
+			</a></li>
+			<!-- 
+			 <li><a href="1-1-3-2.html" target="_blank">
+			          <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>&nbsp课件</a></li>
+			 <li><a href="1-1-3-3.html" target="_blank">
+			          <span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span>&nbsp讨论</a></li>
+			 <li><a href="1-1-3-4.html" target="_blank">
+			          <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>&nbsp作业及测试</a></li>
+					  
+			 <li><a href="http://www.1y.net/client/1-1-1/1-1-1.html" target="_blank">
+			          <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>&nbsp课程简介</a></li>
+			-->
+			<li><a href="http://www.1y.net/client/course/singleCourse/ware.jsp?courseId=59">
+					<span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>&nbsp;课件
+			</a></li>
+			<li><a id="video" href="http://www.1y.net/client/course/course_live.jsp?id=59"> <span
+					class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span>&nbsp;课程观看
+			</a></li>
+			<div id="lanPos"></div>
+		</ul>
+	</div>
+
+	<div class="bulletinBody">
+		<br>
+		<div class="waring">
+			<h4>
+
+
+				<span class="glyphicon glyphicon-bell" aria-hidden="true">
+					&nbsp;</span>老师发布了最新的公告
+
+
+
+			</h4>
+		</div>
+		<div class="bulletinTitle">课程公告</div>
+
+
+		<div class="bulletinContent">
+			<h3 style="font-family: 黑体">停课通知</h3>
+			<br>
+			<h4>
+				<div contenteditable="true" style="width: 100%; height: 100%;"
+					class="w-e-text" id="text-elem5066029694030514">
+					<p>本周2月30日停课一天，请同学自行安排</p>
+				</div>
+			</h4>
+			<br>
+			<h4 style="float: right">2018-05-29</h4>
+			<br>
+			<br>
+		</div>
+
+
+
+		<br> <br> <br>
+
+	</div>
+	<div
+		style="margin-top: 5%; width: 100%; height: 100px; background-color: #151515; float: left">
+	</div>
+	<iframe src="http://www.1y.net/client/header_and_footer/footer.html" id="iframe-footer"></iframe>
+<!--新添加的-->
+	<div id="walkthrough-content">
+		<div id="walkthrough-1">
+			这就是数据库教程的课程页面
+		</div>
+
+		<div id="walkthrough-2">点击课程观看即可进入直播间观看</div>
+
+		
+	</div>
+
+	<script>
+		$(function() {
+			// Set up tour
+			$('body').pagewalkthrough({
+				name : 'introduction',
+				steps : [ {
+					popup : {
+						content : '#walkthrough-1',
+						type : 'modal'
+					}
+				}, {
+					wrapper : '#video',
+					popup : {
+						content : '#walkthrough-2',
+						type : 'tooltip',
+						position : 'bottom'
+					}
+				}],
+				onClose : function(){
+					location.href="index.jsp";
+				},
+				buttons:{
+					jpwFinish:{
+						i18n:"完成",
+					},
+					jpwPrevious:{
+						i18n:"上一步",
+					},
+					jpwNext:{
+						i18n:"下一步"
+					},
+					jpwClose:{
+						i18n:"退出引导"
+					}
+				}
+				
+			});
+
+			// Show the tour
+			$('body').pagewalkthrough('show');
+
+			var w = $('.overlay-hole').width();
+			var h = $('.overlay-hole').height();
+			$(".overlay-hole").css({
+				"margin-left" : "80px",
+				"margin-top" : "160px"
+			});
+
+		});
+	</script>
+
+
+
+</body>
+
+
+
+</html>
